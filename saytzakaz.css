@@ -209,21 +209,74 @@ td.button > a:hover{
 }
 
 @media screen and (max-width:1200px) {
-    body{
-        flex-direction: column;
-        width: 100%;
-    }
-    .menu{
-        flex-direction: column;
-        width: 100%;
-    }
-    .home{
-        flex-direction: column;
-        width: 90%;
-    }
-    tr{
-        flex-direction: column;
-        width: 100%;
-    }
-    
+
+header{
+    display: block;
+}
+
+ul.home{
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width:40%;
+    background-color: #060818   
+} 
+
+ul.home li{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+h1{
+    display: block;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #191e3a;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    /* border-bottom: 1px solid gray; */
+    padding: 20px;
+    margin: 0;
+    z-index: 1;
+}
+h6{
+    text-align: center;
+}
+
+h1 > button{
+    border: none;
+    /* color: white; */
+    /* background-color: white; */
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    left: 5%;
+    top: 25px;
+    background-color: transparent;
+}
+h1 > button > div{
+    margin: 5px;
+    border: 1px solid gray;
+}
+h1 > button > div :hover{
+display: block;
+}
+ul.home > li{
+    display:block;
+    width: 100%;
+    position: static;
+    transition: 1s;
+    /* max-height:0; */
+    overflow: hidden;
+}
+h1 > button :hover{
+    display: block;
+    max-height: 400px;
+}
+ul.home > li > ul > li > a{
+    text-align: center;
+}
+
 }
